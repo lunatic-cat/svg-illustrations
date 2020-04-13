@@ -4,7 +4,7 @@ module.exports = function (api) {
   const isTestEnv = api.env('test');
 
   return {
-    ignore: ["\\.test\\.js"],
+    ignore: ['\\.test\\.js'],
     presets: [
       isTestEnv && [
         require('@babel/preset-env').default,

@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Smth from './index';
+import Illustration from './index';
 
-it('TODO', () => {
+it('Check if render works fine', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Smth />, div);
+  ReactDOM.render(<Illustration name="doctor-woman" />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
