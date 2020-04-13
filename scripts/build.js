@@ -44,6 +44,19 @@ const { pascalCase } = require('pascal-case');
       {
         icon: true,
         plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
+        replaceAttrValues: {
+          '#ffd98e': '{primaryColor}',
+          '#ffe4ad': '{primaryColor}',
+          '#ffc78e': '{primaryColor}',
+          '#6bd5e1': '{secondaryColor}',
+          '#5fc5d1': '{secondaryColor}',
+
+          // error-404-colour image
+          '#fed385': '{primaryColor}',
+          '#fed892': '{primaryColor}',
+          '#74d5de': '{secondaryColor}',
+          '#56cad8': '{secondaryColor}',
+        },
         svgProps: {
           style: '{styleProps}',
         },
@@ -101,7 +114,7 @@ function svgrTemplate(api, opts, state) {
     import * as React from 'react';
 
     function ${componentName}(p) {
-      const { height, style, ...props } = p;
+      const { primaryColor, secondaryColor, height, style, ...props } = p;
       const styleProps = { width: '100%', height, ...style };
 
       return (${jsx});
