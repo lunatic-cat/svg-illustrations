@@ -1,0 +1,55 @@
+{
+  "name": "svg-illustrations",
+  "version": "1.0.0",
+  "description": "React component for drawkit and others",
+  "main": "index.js",
+  "browserslist": "> 1%, not dead",
+  "scripts": {
+    "lint": "prettier --check \"src/**/*.js\"",
+    "format": "prettier --write **/*.js",
+    "build": "NODE_ENV=production babel src -d dist --ignore '**/*.test.js'",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lunatic-cat/svg-illustrations"
+  },
+  "keywords": [
+    "svg",
+    "react",
+    "reactjs",
+    "illustrations",
+    "drawkit"
+  ],
+  "author": "lunatic.cat",
+  "peerDependencies": {
+    "core-js": "^3.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-jest": "^25.3.0",
+    "babel-node": "0.0.1-security",
+    "core-js": "^3.6.5",
+    "husky": "^4.2.5",
+    "jest": "^25.2.4",
+    "prettier": "^2.0.4",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lunatic-cat/svg-illustrations/issues"
+  },
+  "homepage": "https://github.com/lunatic-cat/svg-illustrations#readme"
+}
